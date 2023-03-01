@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TeacherService } from 'src/app/services/teacher.service';
 
 @Component({
   selector: 'app-teachers',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./teachers.component.css']
 })
 export class TeachersComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+    teachersTab:any =[];
+      constructor( private teacherService:TeacherService) { }
+    
+      ngOnInit() {
+        // this.getAllTeachers();
+        this.teachersTab =JSON.parse(localStorage.getItem("teachers")||"[]")
+      
+      this.teacherService.getAllTeachers().subscribe();
+      }
+      // getAllTeachers(){
+      //   this.teachersTab=JSON.parse(localStorage.getItem("teachers")||"[]")
+      // }
+    
+    }

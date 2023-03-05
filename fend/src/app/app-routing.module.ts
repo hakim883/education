@@ -26,6 +26,7 @@ import { NewsletterComponent } from './components/newsletter/newsletter.componen
 import { ProfileComponent } from './components/profile/profile.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { TeacherInfoComponent } from './components/teacher-info/teacher-info.component';
+import { TeacherTableComponent } from './components/teacher-table/teacher-table.component';
 import { TeachersComponent } from './components/teachers/teachers.component';
 
 
@@ -47,11 +48,13 @@ const routes: Routes = [
   {path: "signup", component: SignupComponent},
   {path: "teachers", component: TeachersComponent},
   {path: "teacherInfo/:id", component:TeacherInfoComponent},
-{path: "editTeacher/:id", component:EditTeacherComponent},
-{path: "courseInfo/:id", component:CourseInfoComponent},
-{path: "editCourse/:id", component:EditCourseComponent},
-{ path: "profile", component: ProfileComponent },
-{ path: "coursetable", component: CourseTableComponent },
+  {path: "editTeacher/:id", component:EditTeacherComponent},
+  {path: "courseInfo/:id", component:CourseInfoComponent},
+  {path: "editCourse/:id", component:EditCourseComponent},
+  { path: "profile", component: ProfileComponent },
+  { path: "coursetable", component: CourseTableComponent },
+  { path: "teachertable", component: TeacherTableComponent },
+
 
 
 

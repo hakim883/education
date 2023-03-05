@@ -18,9 +18,9 @@ export class AuthService {
     signup(user): Observable<any>{
       return this.http.post(this.userUrl + "/signup",user);
     }
-    // register(user): Observable<any> {
-    //   return this.http.post(this.userUrl + "signup", user);
-    // }
+    register(user): Observable<any> {
+      return this.http.post(this.userUrl + "signup", user);
+    }
   
     login(user) {
       return this.http.post<{accessToken:any}>(this.userUrl + "login", user);

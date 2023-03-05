@@ -66,7 +66,7 @@ export class AddCourseComponent implements OnInit {
 
     }
 
-    this.router.navigate(["admin"]);
+   // this.router.navigate(["admin , user"]);
         
   }
 }

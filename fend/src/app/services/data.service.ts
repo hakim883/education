@@ -8,17 +8,17 @@ export class DataService {
   constructor() { }
 
 
-  createDb(){
+//   createDb(){
 
-    let courses= [
-      { id:1 , title: "hey", teacher_id: "hh", description: "F", number_place: 2},
+//     let courses= [
+//       { id:1 , title: "hey", teacher_id: "hh", description: "F", number_place: 2},
       
-    ]; 
-    let teachers= [
-      { id:1,name: "hh", speciality: "ll", experience: "F", email: "R@a"},
+//     ]; 
+//     let teachers= [
+//       { id:1,name: "hh", speciality: "ll", experience: "F", email: "R@a"},
      
-    ]; 
-    return {courses,teachers};
+//     ]; 
+//     return {courses,teachers};
 
-}
+// }
 }

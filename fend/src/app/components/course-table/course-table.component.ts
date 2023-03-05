@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CourseService } from 'src/app/services/course.service';
 
@@ -8,12 +8,15 @@ import { CourseService } from 'src/app/services/course.service';
   styleUrls: ['./course-table.component.css']
 })
 export class CourseTableComponent implements OnInit {
+
  courses:any = [];
+ //i:any=[];
  constructor(
    private courseService:CourseService,
    private router:Router
    ) { }
  ngOnInit() {
+  //this.i=[{id:"id",title:"title",description:"description",teacher_id:"teacher_id",price:"price",number_place:"number_place"}]
    this.courseService.getAllCourses().subscribe();
  }
 

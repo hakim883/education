@@ -1,0 +1,31 @@
+<div class="col-lg-6">
+    <div class="contact_form">
+        <div class="contact_info_title">Edit teacher</div>
+        <form  class="comment_form" #teacherForm="ngForm" (ngSubmit)="editTeacher()">
+            <div>
+                <div class="form_title">Name</div>
+                <input type="text" class="comment_input" required="required"  [(ngModel)]="teacher.name"
+                [ngModelOptions]="{standalone:true}" placeholder="Name">
+            </div>
+            <div>
+                <div class="form_title">Speciality</div>
+                <input type="text" class="comment_input" required="required"  [(ngModel)]="teacher.speciality"
+                [ngModelOptions]="{standalone:true}" placeholder="Speciality">
+            </div>
+            <div>
+                <div class="form_title">Experience</div>
+                <input type="text" class="comment_input" required="required" [(ngModel)]="teacher.experience"
+                [ngModelOptions]="{standalone:true}" placeholder="Name">
+            </div>
+            <div>
+                <div class="form_title">Email</div>
+                <input type="text" class="comment_input" required="required" [(ngModel)]="teacher.email"
+                [ngModelOptions]="{standalone:true}" placeholder="Name">
+            </div>
+           
+            <div>
+                <input type="submit" class="comment_button trans_200" value="Edit Teacher">
+            </div>
+        </form>
+    </div>
+</div>

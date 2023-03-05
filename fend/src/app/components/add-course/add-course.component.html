@@ -1,0 +1,68 @@
+
+
+
+
+<div class="a">
+    <title>Add Course</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Unicat project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/styles/bootstrap4/bootstrap.min.css">
+    <link href="assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/contact.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/contact_responsive.css">
+    
+    
+    
+    
+    
+    <div class="super_container">
+
+      <div class="contact">
+    
+        <div class="contact_info_container">
+          <div class="container">
+            <div class="row">
+    
+              <div class="col-lg-6">
+                <div class="contact_form">
+                  <div class="contact_info_title">Add Course</div>
+        <form  class="comment_form" #courseForm="ngForm" (ngSubmit)="addOrEditCourse()">
+            <div>
+                <div class="form_title">Title</div>
+                <input type="text" class="comment_input" required="required" [(ngModel)]="course.title"
+                [ngModelOptions]="{standalone:true}" placeholder="title">
+            </div>
+           
+            <div>
+                <div class="form_title">Description</div>
+                <textarea class="comment_input comment_textarea" required="required"  [(ngModel)]="course.description"
+                [ngModelOptions]="{standalone:true}" placeholder="description"></textarea>
+            </div>
+            <div>
+                <div class="form_title">Price</div>
+                <input type="number" class="comment_input" required="required" [(ngModel)]="course.price"
+                [ngModelOptions]="{standalone:true}" placeholder="price">
+            </div>
+            <div>
+                <div class="form_title">Number-place</div>
+                <input type="number" class="comment_input" required="required"  [(ngModel)]="course.number_place"
+                [ngModelOptions]="{standalone:true}" placeholder="number_place">
+            </div>
+            <div>
+                <div class="form_title">Teacher-ID</div>
+                <input type="text" class="comment_input" required="required"  [(ngModel)]="course.teacher_id"
+                [ngModelOptions]="{standalone:true}" placeholder="teacher_id">
+            </div>
+            <div>
+                <button type="submit" (click)="addOrEditCourse()" class="comment_button trans_200" value="Add Course">submit now</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    </div>

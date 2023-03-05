@@ -1,0 +1,66 @@
+
+
+
+<div class="aa">
+    <title>Add Teacher</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Unicat project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/styles/bootstrap4/bootstrap.min.css">
+    <link href="assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/contact.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/contact_responsive.css">
+   
+    
+    
+    
+    
+    <div class="super_container">
+    
+    
+    
+      <div class="contact">
+        
+    
+    
+    
+        <div class="contact_info_container">
+          <div class="container">
+            <div class="row">
+    
+              <div class="col-lg-6">
+                <div class="contact_form">
+                  <div class="contact_info_title">Add Teacher</div>
+        <form  class="comment_form" #teacherForm="ngForm" (ngSubmit)="addOrEditTeacher()">
+            <div>
+                <div class="form_title">Name</div>
+                <input type="text" class="comment_input" required="required"  [(ngModel)]="teacher.name"
+                [ngModelOptions]="{standalone:true}" placeholder="Name">
+            </div>
+            <div>
+                <div class="form_title">Speciality</div>
+                <input type="text" class="comment_input" required="required"  [(ngModel)]="teacher.speciality"
+                [ngModelOptions]="{standalone:true}" placeholder="Speciality">
+            </div>
+            <div>
+                <div class="form_title">Experience</div>
+                <input type="text" class="comment_input" required="required" [(ngModel)]="teacher.experience"
+                [ngModelOptions]="{standalone:true}" placeholder="Name">
+            </div>
+            <div>
+                <div class="form_title">Email</div>
+                <input type="text" class="comment_input" required="required" [(ngModel)]="teacher.email"
+                [ngModelOptions]="{standalone:true}" placeholder="Name">
+            </div>
+           
+            <div>
+                <input type="submit" class="comment_button trans_200" value="Add Teacher">
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
